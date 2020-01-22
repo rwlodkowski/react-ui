@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Glyphs / Player / forward 30sec</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10.3806,0 C6.8346,0 3.5216,1.905 1.7346,4.972 C1.7216,4.995 1.7216,5.021 1.7096,5.045 L0.5776,4.636 C0.2516,4.518 -0.0704,4.785 0.0136,5.11 L1.0086,9.057 C1.0836,9.357 1.4556,9.492 1.7086,9.311 L4.9946,6.913 C5.2676,6.716 5.1916,6.305 4.8646,6.187 L3.6246,5.738 C5.0856,3.431 7.6406,2 10.3806,2 C14.7916,2 18.3806,5.589 18.3806,10 C18.3806,14.411 14.7916,18 10.3806,18 C7.5436,18 4.8926,16.476 3.4636,14.021 C3.1846,13.544 2.5716,13.383 2.0956,13.66 C1.6186,13.938 1.4566,14.551 1.7346,15.027 C3.5216,18.095 6.8346,20 10.3806,20 C15.8946,20 20.3806,15.514 20.3806,10 C20.3806,4.486 15.8946,0 10.3806,0" id="path-1"></path>
+    </defs>
+    <g id="Glyphs-/-Player-/-forward-30sec" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(14.500000, 14.000000) scale(-1, 1) translate(-14.500000, -14.000000) translate(4.000000, 4.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Fill-2" fill="#000000" xlink:href="#path-1"></use>
+            <g id="Colors-/-white" mask="url(#mask-2)" fill="#FFFFFF">
+                <g transform="translate(-4.000000, -4.000000)" id="Rectangle">
+                    <rect x="0" y="0" width="28" height="28"></rect>
+                </g>
+            </g>
+        </g>
+        <text id="30" font-family="Campton-Book, Campton" font-size="7" font-weight="300" fill="#FFFFFF">
+            <tspan x="10.5" y="16.5">30</tspan>
+        </text>
+    </g>
+</svg>

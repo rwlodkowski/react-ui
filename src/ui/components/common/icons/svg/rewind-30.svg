@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <path id="a" d="M10.38 0a10.041 10.041 0 0 0-8.645 4.972c-.013.023-.013.049-.025.073L.578 4.636c-.326-.118-.648.149-.564.474l.995 3.947c.075.3.447.435.7.254l3.286-2.398c.273-.197.197-.608-.13-.726l-1.24-.449C5.085 3.431 7.64 2 10.38 2c4.41 0 8 3.589 8 8s-3.59 8-8 8a8.03 8.03 0 0 1-6.917-3.979 1 1 0 1 0-1.729 1.006A10.04 10.04 0 0 0 10.38 20c5.514 0 10-4.486 10-10s-4.486-10-10-10"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(4 4)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#000" xlink:href="#a"/>
+            <g fill="#FFF" mask="url(#b)">
+                <path d="M-4-4h28v28H-4z"/>
+            </g>
+        </g>
+        <text fill="#FFF" font-family="Campton-Book, Campton" font-size="7" font-weight="300">
+            <tspan x="10" y="16.5">30</tspan>
+        </text>
+    </g>
+</svg>

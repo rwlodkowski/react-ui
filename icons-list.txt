@@ -1,0 +1,53 @@
+ChannelsListIcon,
+ChromecastIcon,
+CloseIcon,
+DolbyAtmosIcon,
+ErrorIcon,
+Forward10Icon,
+Forward30Icon,
+FullscreenExitIcon,
+FullscreenIcon,
+JoynLogoIcon,
+MuteIcon,
+PauseIcon,
+PlayIcon,
+RestartIcon,
+Rewind10Icon,
+Rewind30Icon,
+VolumeIcon
+
+<ChannelsListIcon />
+<ChromecastIcon />
+<CloseIcon />
+<DolbyAtmosIcon />
+<ErrorIcon />
+<Forward10Icon />
+<Forward30Icon />
+<FullscreenExitIcon />
+<FullscreenIcon />
+<JoynLogoIcon />
+<MuteIcon />
+<PauseIcon />
+<PlayIcon />
+<RestartIcon />
+<Rewind10Icon />
+<Rewind30Icon />
+<VolumeIcon />
+
+channels-list.svg
+chromecast.svg
+close.svg
+dolby-atmos.svg
+error.svg
+forward-10.svg
+forward-30.svg
+fullscreen-exit.svg
+fullscreen.svg
+joyn-logo.svg
+mute.svg
+pause.svg
+play.svg
+restart.svg
+rewind-10.svg
+rewind-30.svg
+volume.svg
