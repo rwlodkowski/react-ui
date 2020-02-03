@@ -1,11 +1,15 @@
-import Button from "../common/Button";
 import styled from "styled-components";
+import Button from "../common/Button";
+import StyledIcon from "../common/icons/StyledIcon";
 
 const BaseButton = styled(Button)`
-  width: 28px;
+  min-width: 28px;
   height: 28px;
-  transition: transform 100ms ease-in-out;
-  &:hover {
+
+  & ${StyledIcon} {
+    transition: transform 100ms ease-in-out;
+  }
+  &:hover ${StyledIcon} {
     transform: scale(1.2);
   }
 `;

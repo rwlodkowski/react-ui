@@ -6,7 +6,7 @@ export interface ButtonProps {
   disabled?: boolean;
   icon?: React.ComponentType<StyledIconProps>;
   label?: string;
-  children?: React.ReactNode;
+  children?: never;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -17,29 +17,41 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <StyledButton {...restProps}>
-      {Icon && <Icon />}
-      {label && <StyledLabel>{label}</StyledLabel>}
-      {children}
+      <StyledButtonContentWrapper>
+        {Icon && <Icon />}
+        {label && <StyledLabel>{label}</StyledLabel>}
+      </StyledButtonContentWrapper>
     </StyledButton>
   );
 };
 
 const StyledButton = styled.button`
-  display: inline-flex;
-  text-align: center;
-  justify-content: center;
-  align-items: stretch;
-  background-color: transparent;
-  border: none;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  font: inherit;
+  text-decoration: none;
   margin: 0;
   padding: 0;
+  background: transparent;
+  overflow: visible;
+  text-transform: none;
+  border: none;
+  text-align: inherit;
   color: inherit;
-  cursor: pointer;
+`;
+
+/* we need this wrapper because button elements are not able to correctly behave as flexbox containers */
+const StyledButtonContentWrapper = styled.span`
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 `;
 
 const StyledLabel = styled.span`
-  display: inline-flex;
-  align-items: center;
+  display: inline-block;
 `;
 
 export default Button;
