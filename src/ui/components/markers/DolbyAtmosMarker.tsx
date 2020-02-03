@@ -1,9 +1,7 @@
-import React from "react";
+import styled from "styled-components";
+import BaseMarker from "./BaseMarker";
+import { DolbyAtmosIcon } from "../common/icons";
 
-interface Props {}
-
-const DolbyAtmosMarker: React.FC<Props> = () => {
-  return <div></div>;
-};
+const DolbyAtmosMarker = styled(BaseMarker).attrs({ icon: DolbyAtmosIcon })``;
 
 export default DolbyAtmosMarker;

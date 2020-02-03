@@ -7,6 +7,7 @@ export * from "./Forward10Icon";
 export * from "./Forward30Icon";
 export * from "./FullscreenExitIcon";
 export * from "./FullscreenIcon";
+export * from "./HDIcon";
 export * from "./JoynLogoIcon";
 export * from "./LanguageIcon";
 export * from "./MuteIcon";

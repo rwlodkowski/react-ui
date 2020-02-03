@@ -1,12 +1,18 @@
 import styled from "styled-components";
+import { StyledIconProps } from "../common/icons/StyledIcon";
+import Marker from "../common/Marker/Marker";
 
-const BaseMarker = styled.div`
-  width: 28px;
-  height: 28px;
-  transition: transform 100ms ease-in-out;
-  &:hover {
-    transform: scale(1.2);
-  }
+export interface MarkerProps {
+  icon: React.ComponentType<StyledIconProps>;
+  opacity?: number;
+  children?: never;
+}
+
+const BaseMarker = styled(Marker)`
+  display: inline-block;
+  opacity: 0.5;
+  user-select: none;
+  pointer-events: none;
 `;
 
 export default BaseMarker;

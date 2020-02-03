@@ -1,9 +1,7 @@
-import React from "react";
+import styled from "styled-components";
+import BaseMarker from "./BaseMarker";
+import { HDIcon } from "../common/icons";
 
-interface Props {}
-
-const HDMarker: React.FC<Props> = () => {
-  return <div></div>;
-};
+const HDMarker = styled(BaseMarker).attrs({ icon: HDIcon })``;
 
 export default HDMarker;
