@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import BaseMarker from "./BaseMarker";
+import Marker from "../common/Marker";
 import { HDIcon } from "../common/icons";
 
-const HDMarker = styled(BaseMarker).attrs({ icon: HDIcon })``;
+const HDMarker = styled(Marker).attrs({ icon: HDIcon })``;
 
 export default HDMarker;

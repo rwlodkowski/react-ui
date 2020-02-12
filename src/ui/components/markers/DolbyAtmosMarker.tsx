@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import BaseMarker from "./BaseMarker";
+import Marker from "../common/Marker";
 import { DolbyAtmosIcon } from "../common/icons";
 
-const DolbyAtmosMarker = styled(BaseMarker).attrs({ icon: DolbyAtmosIcon })``;
+const DolbyAtmosMarker = styled(Marker).attrs({ icon: DolbyAtmosIcon })``;
 
 export default DolbyAtmosMarker;
