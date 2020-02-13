@@ -1,34 +1,58 @@
-import styled from "styled-components";
+import React from "react";
+import FlexColumn from "./common/FlexColumn";
+import FlexRow from "./common/FlexRow";
+import HDMarker from "./markers/HDMarker";
+import DolbyAtmosMarker from "./markers/DolbyAtmosMarker";
+import CloseButton from "./buttons/CloseButton";
+import PlayButton from "./buttons/PlayButton";
+import Rewind10Button from "./buttons/Rewind10Button";
+import Forward10Button from "./buttons/Forward10Button";
+import ChannelsListButton from "./buttons/ChannelsListButton";
 
-import React, { ReactElement } from "react";
-import Button from "./common/Button/Button";
-import { PlayIcon } from "./common/icons";
+interface Props {}
 
-interface ControlsProps {}
-
-export function Controls<ControlsProps>(): ReactElement {
+const Controls: React.FC<Props> = () => {
   return (
-    <ControlsWrapper>
-      <ControlsGroup>
-        <Button icon={PlayIcon}>Play</Button>
-      </ControlsGroup>
-    </ControlsWrapper>
+    <FlexColumn
+      top={
+        <FlexRow
+          left={
+            <>
+              <DolbyAtmosMarker />
+              <HDMarker />
+            </>
+          }
+          right={<CloseButton />}
+        />
+      }
+      center={
+        <FlexRow
+          center={
+            <>
+              <Rewind10Button />
+              <PlayButton />
+              <Forward10Button />
+            </>
+          }
+        />
+      }
+      bottom={
+        <>
+          <FlexRow center={<div>METADATA</div>} />
+          <FlexRow
+            left={<ChannelsListButton />}
+            center={
+              <>
+                <Rewind10Button />
+                <PlayButton />
+                <Forward10Button />
+              </>
+            }
+          />
+        </>
+      }
+    />
   );
-}
+};
 
-const ControlsWrapper = styled.div`
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: #aaa;
-`;
-
-const ControlsGroup = styled.div`
-  display: flex;
-  background-color: lightblue;
-`;
-
-export default styled(Controls)``;
+export default Controls;
