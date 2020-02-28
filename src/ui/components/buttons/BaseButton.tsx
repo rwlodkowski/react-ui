@@ -7,7 +7,7 @@ const BaseButton = styled(Button)`
   height: 28px;
 
   & ${StyledIcon} {
-    transition: transform 100ms ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
   }
   &:hover ${StyledIcon} {
     transform: scale(1.2);

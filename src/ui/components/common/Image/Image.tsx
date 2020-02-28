@@ -1,11 +1,5 @@
-import React from "react";
+import styled from "styled-components";
 
-interface ImageProps {
-    
-}
-
-const Image: React.FC<ImageProps> = () => {
-  return <div></div>;
-};
+const Image = styled.img``;
 
 export default Image;

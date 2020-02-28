@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { StyledIconProps } from "../icons/StyledIcon";
 
 export interface MarkerProps {
@@ -18,10 +18,14 @@ const Marker: React.FC<MarkerProps> = ({
 };
 
 export default styled(Marker)<MarkerProps>(
-  ({ opacity = 0.5 }) => `
-  display: inline-block;
-  opacity: ${opacity};
-  user-select: none;
-  pointer-events: none;
-`
+  ({ opacity = 0.5 }) => css`
+    display: inline-block;
+    opacity: ${opacity};
+    user-select: none;
+    pointer-events: none;
+    margin-left: 20px;
+    &:first-child {
+      margin-left: 0;
+    }
+  `
 );
